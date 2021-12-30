@@ -26,7 +26,7 @@ def start_admin(user,password,w="default"):
     con = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="goloo",#Replace XXXX with your MySQL password
+        password="XXXX",#Replace XXXX with your MySQL password
         database="Library")
     cur = con.cursor()
            
@@ -68,7 +68,7 @@ def start_admin(user,password,w="default"):
         global admin_email_password
         admin_email_password=askstring("Admin Email Password","Enter Your Mail Password!!",show='*')
         #,command=recheck
-        passs='admin@iiitktm'
+        passs='XXXX'
         if admin_email_password==passs:
             messagebox.showinfo('ADMIN Email Password','Password Accepted')
         else:
