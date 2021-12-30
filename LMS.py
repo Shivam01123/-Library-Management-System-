@@ -2027,7 +2027,7 @@ def start_login(win=False):
             con1 = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                password="goloo",#Replace XXXX with your MySQL password
+                password="XXXX",#Replace XXXX with your MySQL password
                 database="Library")
             cur1 = con1.cursor()
             cur1.execute(command1,var)
@@ -2199,7 +2199,7 @@ def start_student(reg,password,win1="default"):
     con = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="goloo",#Replace XXXX with your MySQL password
+        password="XXXX",#Replace XXXX with your MySQL password
         database="Library")
     cur = con.cursor()
     #initialize Regno of the student to argument passed from module login.py into start() function after login 
